@@ -5,13 +5,13 @@
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char x;
+	int x = 97;
 
-	for (x = 'a' ; x <= 'z' ; x++)
+	while (x <= 122)
 	       putchar(x);
+	x++;
 	putchar('\n');
 	return (0);
-}	
+}
