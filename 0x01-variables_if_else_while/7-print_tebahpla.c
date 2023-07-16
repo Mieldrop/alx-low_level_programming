@@ -3,15 +3,15 @@
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char n;
+	char x;
 
-	for (n = 'z' ; n >= 'a' ; n++)
-		putchar(n);
+	for (x = 'Z' ; x >= 'a' ; x--)
+		putchar(x);
 	putchar('\n');
 	return (0);
 }
