@@ -1,12 +1,15 @@
 #include "main.h"
-
 /**
- * print_sign - Prints the sigh of a number
- * Return: 1 and print + if is greater than zero
- * 0 and ptint 0 if is zero
- * -1 and print - if is less than 0
+ * print_sign - prints the sigh of a number
+ * 
+ * @n: the int to check
+ *
+ * Return: 1 and print + if n is greater than 0
+ *
+ * 0 and print 0 if n is zero
+ *
+ * -1 and print - if n is less than zero
  */
-
 int print_sign(int n)
 {
 	if (n > 0)
@@ -19,7 +22,7 @@ int print_sign(int n)
 		_putchar(48);
 		return (0);
 	}
-	else if (n < 0)
+	else
 	{
 		_putchar('-');
 		return (-1);
