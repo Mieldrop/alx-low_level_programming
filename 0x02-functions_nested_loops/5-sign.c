@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Entry point
+ * print_sign - Prints the sigh of a number
  * Return: 1 and print + if is greater than zero
  * 0 and ptint 0 if is zero
  * -1 and print - if is less than 0
