@@ -3,8 +3,7 @@
 /**
  * main - main block
  * Description: computes and prints thesum of all multiples of 3 or
- * 3 below 1024(excluded)
- * followed by a new line
+ * 3 below 1024 (excluded), followed by a new line
  * Return: Always 0
  */
 
@@ -24,6 +23,6 @@ int main(void)
 			printf(", ");
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
