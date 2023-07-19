@@ -1,13 +1,9 @@
 #include "main.h"
 /**
  * print_sign - prints the sigh of a number
- * 
  * @n: the int to check
- *
  * Return: 1 and print + if n is greater than 0
- *
  * 0 and print 0 if n is zero
- *
  * -1 and print - if n is less than zero
  */
 int print_sign(int n)
