@@ -9,20 +9,43 @@
 
 int main(void)
 {
-	int i = 0;
-	unsigned long int a = 0, b = 1, next = 0;
+	int i;
+	unsigned long f1 = 0, f2 = 1, sum;
+	unsigned long f1_h1, f1_h2, f2_h1, f2_h2;
+	unsigned long h1, h2;
 
-	while (i < 98)
+	for (i = 0; i < 98; i++)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
+		sum = f1 + f2;
+		printf("%lu, ", sum);
 
-		if (i < 97)
-			printf(", ");
-		i++;
+		f1 = f2;
+		f2 = sum;
 	}
-	putchar('\n');
+	f1_h1 = f1 / 10000000000;
+	f2_h1 = f2 / 10000000000;
+	f1_h2 = f1 % 10000000000;
+	f2_h2 = f2 % 10000000000;
+
+	for (i = 97; i < 99; i++)
+	{
+		h1 = f1_h1 + f2_h1;
+		h2 = f1_h2 + f2_h2;
+		if (f1_h1 + f2_h2 > 9999999999)
+		{
+			h1 += 1;
+			h2 %= 10000000000;
+		}
+
+		printf("%lu%lu", h1, h2);
+		if (i != 98)
+			printf(", ");
+
+		f1_h1 = f2_h1;
+		f1_h2 = f2_h2;
+		f2_h1 = h2;
+		f2_h2 = h1;
+	}
+	printf("\n");
 	return (0);
 }
