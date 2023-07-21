@@ -13,7 +13,7 @@ int main(void)
 	b = 612852475143;
 	for (a = 1; a <= b; a++)
 {
-		if (b % 1 == 0)
+		if (b % a == 0)
 		{
 			if (b == a)
 			{
