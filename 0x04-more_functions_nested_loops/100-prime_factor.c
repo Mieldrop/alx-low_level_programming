@@ -3,12 +3,12 @@
 /**
  * main - print the largest prime factor of the
  * number 612852475143
- * Return: Always 0
+ * Return: Always (0)
  */
 
 int main(void)
 {
-	int long a, b, c;
+	long int a, b, c;
 
 	b = 612852475143;
 	for (a = 1; a <= b; a++)
