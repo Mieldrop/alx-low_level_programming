@@ -10,16 +10,25 @@
 
 int main(void)
 {
-	int a, b;
+	int pass[100];
+	int a, b, c;
+
+	b = 0;
 
 	srand(time(NULL));
-	b = 0;
-	while ( b <= 2645)
+
+	for (a =0; a < 100; a++)
 	{
-		 a = (rand() % 128);
-		 b += a;
-		 printf("%c", a);
+		pass[a] = rand() % 78;
+		b += (pass[a] + '0');
+		putchar(pass[a] + '0');
+		if ((2772 - b) - '0' < 78)
+		{
+			c = 2772 - b - '0';
+			b += c;
+			putchar(c + '0');
+			break;
+		}
 	}
-	printf("%c", 2772 - b);
 	return (0);
 }
