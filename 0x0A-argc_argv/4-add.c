@@ -9,7 +9,7 @@
  * Return: 0
  */
 int main(int argc, char *argv[])
-{
+
 	int i;
 	unsigned int k, sum = 0;
 	char *e;
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			e = argv[i];
-			
+
 			for (k = 0; k < strlen(e); k++)
 			{
 				if (e[k] < 48 || e[k] > 57)
