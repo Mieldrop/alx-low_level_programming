@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-int atoi(char *s);
+int atoi(const char *__nptr);
 int main(int argc, char *argv[]);
 
 
