@@ -9,7 +9,7 @@
  * Return: 0
  */
 int main(int argc, char *argv[])
-
+{
 	int i;
 	unsigned int k, sum = 0;
 	char *e;
