@@ -5,14 +5,14 @@
  * @n: the string
  * Return: integer length of string
  */
-int _strlen(char *s)
+int _strlen(char *n)
 {
 	int i = 0;
 
-	if (!s)
+	if (!n)
 		return (0);
 
-	while (*s++)
+	while (*n++)
 		i++;
 	return (i);
 }
